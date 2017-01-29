@@ -12,19 +12,6 @@ import UserNotificationsUI
 
 final class ViewController: UIViewController {
     
-    fileprivate var localNotButton: UIButton!
-    fileprivate var localActionNotButton: UIButton!
-    fileprivate var localAttachementNotButton: UIButton!
-    fileprivate var localCustomContentNotButton: UIButton!
-    fileprivate var localDelayedNotButton: UIButton!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        setUpButtons()
-        setUpConstraints()
-    }
-
 }
 
 // MARK: - UNUserNotificationCenterDelegate Conformance
@@ -42,7 +29,7 @@ extension UIViewController: UNUserNotificationCenterDelegate {
 // MARK: - Notification Management
 extension ViewController {
     
-    func showSimpleLocalNototification() {
+    @IBAction func showSimpleLocalNototification() {
         let content = NotificationContent(title: "SwiftingNotifications", subTitle: "Swifting.io presents", body: "Rich notifications")
         let request = UNNotificationRequest(identifier: NotificationIdentifier.request.description, content: content, trigger: nil)
         UNUserNotificationCenter.current().add(request) { error in
@@ -53,7 +40,7 @@ extension ViewController {
         }
     }
     
-    func showCustomActionsLocalNototification() {
+    @IBAction func showCustomActionsLocalNototification() {
         let content = NotificationContent(title: "SwiftingNotifications", subTitle: "Swifting.io presents", body: "Actionable notifications")
         content.categoryIdentifier = NotificationIdentifier.category.description
         let request = UNNotificationRequest(identifier: NotificationIdentifier.request.description, content: content, trigger: nil)
@@ -65,7 +52,7 @@ extension ViewController {
         }
     }
     
-    func showMediaAttachememnt() {
+    @IBAction func showMediaAttachememnt() {
         
         let content = NotificationContent(title: "SwiftingNotifications", subTitle: "Swifting.io presents", body: "Media notifications")
         
@@ -90,7 +77,7 @@ extension ViewController {
         }
     }
     
-    func showCustomContentNotification() {
+    @IBAction func showCustomContentNotification() {
         
         let content = NotificationContent(title: "SwiftingNotifications", subTitle: "Swifting.io presents", body: "Custom notifications")
         
@@ -105,7 +92,7 @@ extension ViewController {
         }
     }
     
-    func showDelayedNotification() {
+    @IBAction func showDelayedNotification() {
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         let content = NotificationContent(title: "SwiftingNotifications", subTitle: "Swifting.io presents", body: "Delayed notifications")
@@ -118,62 +105,4 @@ extension ViewController {
         }
     }
 
-}
-
-// MARK: - Helper Methods
-extension ViewController {
-    
-    func setUpButtons() {
-        localNotButton = NotificationButton(title: "Show rich notification", action: showSimpleLocalNototification)
-        localActionNotButton = NotificationButton(title: "Show actionable notification", action: showCustomActionsLocalNototification)
-        localAttachementNotButton = NotificationButton(title: "Show media notification", action: showMediaAttachememnt)
-        localCustomContentNotButton = NotificationButton(title: "Show custom content notification", action: showCustomContentNotification)
-        localDelayedNotButton = NotificationButton(title: "Show delayed notification", action: showDelayedNotification)
-        
-        view.addSubview(localNotButton)
-        view.addSubview(localActionNotButton)
-        view.addSubview(localAttachementNotButton)
-        view.addSubview(localCustomContentNotButton)
-        view.addSubview(localDelayedNotButton)
-    }
-    
-    func setUpConstraints() {
-        
-        let views = ["localNotButton": localNotButton!,
-                     "localActionNotButton": localActionNotButton!,
-                     "localAttachementNotButton": localAttachementNotButton!,
-                     "localCustomContentNotButton": localCustomContentNotButton!,
-                     "localDelayedNotButton": localDelayedNotButton!]
-        
-        NSLayoutConstraint.activate(
-            NSLayoutConstraint.constraints(
-                withVisualFormat: "H:|-[localNotButton]-|",
-                options: [], metrics: nil, views: views))
-        
-        NSLayoutConstraint.activate(
-            NSLayoutConstraint.constraints(
-                withVisualFormat: "H:|-[localActionNotButton]-|",
-                options: [], metrics: nil, views: views))
-        
-        NSLayoutConstraint.activate(
-            NSLayoutConstraint.constraints(
-                withVisualFormat: "H:|-[localAttachementNotButton]-|",
-                options: [], metrics: nil, views: views))
-        
-        NSLayoutConstraint.activate(
-            NSLayoutConstraint.constraints(
-                withVisualFormat: "H:|-[localCustomContentNotButton]-|",
-                options: [], metrics: nil, views: views))
-        
-        NSLayoutConstraint.activate(
-            NSLayoutConstraint.constraints(
-                withVisualFormat: "H:|-[localDelayedNotButton]-|",
-                options: [], metrics: nil, views: views))
-        
-        NSLayoutConstraint.activate(
-            NSLayoutConstraint.constraints(
-                withVisualFormat: "V:|-50-[localNotButton]-10-[localActionNotButton]-10-[localAttachementNotButton]-10-[localCustomContentNotButton]-10-[localDelayedNotButton]-(>=10)-|",
-                options: [.alignAllCenterX], metrics: nil, views: views))
-        
-    }
 }
