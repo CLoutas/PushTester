@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let category = UNNotificationCategory(identifier: NotificationIdentifier.category.description, actions: [action], intentIdentifiers: [])
         center.setNotificationCategories([category])
         center.requestAuthorization(options: [.badge, .alert , .sound]) { (greanted, error) in
-            print("\(#function) error: \(error)")
+            if error != nil { print("\(#function) error: \(error)") }
         }
         return true
     }
