@@ -20,9 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let action = UNNotificationAction(identifier: NotificationIdentifier.reply.description, title: "reply")
         let category = UNNotificationCategory(identifier: NotificationIdentifier.category.description, actions: [action], intentIdentifiers: [])
         center.setNotificationCategories([category])
+        
+        // MARK: Request Authorization for Notifications
         center.requestAuthorization(options: [.badge, .alert , .sound]) { (greanted, error) in
             if error != nil { print("\(#function) error: \(error)") }
         }
+        
+        // MARK: Registering for Remote Notifications
+        UIApplication.shared.registerForRemoteNotifications()
         return true
     }
     
@@ -46,6 +51,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    // MARK: - Remote Notification Registration Handling
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let token = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
+        print(token)
     }
     
     // MARK: - Notification Error Handling
