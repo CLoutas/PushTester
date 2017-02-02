@@ -118,15 +118,13 @@
 		1F85A6DB1D44279E0006907C /* SwiftingNotification */ = {
 			isa = PBXGroup;
 			children = (
-				76E0A4461E43B92C0020574C /* SwiftingNotification.entitlements */,
-				1F9EE3D31D61AE3D00AD24F7 /* Media */,
-				1F9EE3D61D61AEDC00AD24F7 /* Classes */,
-				1FC4222E1D5E702C00917D25 /* NotificationIdentifier.swift */,
 				1F85A6DC1D44279E0006907C /* AppDelegate.swift */,
-				1F85A6DE1D44279E0006907C /* ViewController.swift */,
-				1F85A6E01D44279E0006907C /* Main.storyboard */,
+				76E0A44C1E43C7310020574C /* Model */,
+				76E0A44A1E43C72A0020574C /* Controllers */,
+				76E0A44B1E43C72E0020574C /* Views */,
+				1F9EE3D31D61AE3D00AD24F7 /* Media */,
+				76E0A4461E43B92C0020574C /* SwiftingNotification.entitlements */,
 				1F85A6E31D44279E0006907C /* Assets.xcassets */,
-				1F85A6E51D44279E0006907C /* LaunchScreen.storyboard */,
 				1F85A6E81D44279E0006907C /* Info.plist */,
 			);
 			path = SwiftingNotification;
@@ -139,16 +137,6 @@
 				1F9EE3D01D607C6A00AD24F7 /* matrix.gif */,
 			);
 			name = Media;
-			sourceTree = "<group>";
-		};
-		1F9EE3D61D61AEDC00AD24F7 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				1F9EE3D41D61AE9800AD24F7 /* NotificationButton.swift */,
-				1F9EE3D71D61AF3B00AD24F7 /* NotificationContent.swift */,
-				1F9EE3D91D61B42800AD24F7 /* Helpers.swift */,
-			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
 		1FBF33CD1D46BC9700950439 /* Frameworks */ = {
@@ -176,6 +164,34 @@
 				76E0A4481E43C5360020574C /* houston.Appraisals */,
 			);
 			name = Houston;
+			sourceTree = "<group>";
+		};
+		76E0A44A1E43C72A0020574C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F85A6DE1D44279E0006907C /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		76E0A44B1E43C72E0020574C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F85A6E01D44279E0006907C /* Main.storyboard */,
+				1F9EE3D41D61AE9800AD24F7 /* NotificationButton.swift */,
+				1F85A6E51D44279E0006907C /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		76E0A44C1E43C7310020574C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F9EE3D71D61AF3B00AD24F7 /* NotificationContent.swift */,
+				1FC4222E1D5E702C00917D25 /* NotificationIdentifier.swift */,
+				1F9EE3D91D61B42800AD24F7 /* Helpers.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
