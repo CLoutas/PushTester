@@ -70,6 +70,7 @@
 		1FBF33D61D46BC9700950439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		1FBF33D81D46BC9700950439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FC4222E1D5E702C00917D25 /* NotificationIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationIdentifier.swift; sourceTree = "<group>"; };
+		76E0A4461E43B92C0020574C /* SwiftingNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftingNotification.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +115,7 @@
 		1F85A6DB1D44279E0006907C /* SwiftingNotification */ = {
 			isa = PBXGroup;
 			children = (
+				76E0A4461E43B92C0020574C /* SwiftingNotification.entitlements */,
 				1F9EE3D31D61AE3D00AD24F7 /* Media */,
 				1F9EE3D61D61AEDC00AD24F7 /* Classes */,
 				1FC4222E1D5E702C00917D25 /* NotificationIdentifier.swift */,
@@ -219,6 +221,11 @@
 						DevelopmentTeam = XZUC27U986;
 						DevelopmentTeamName = "F. Hoffmann-La Roche Ltd.";
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					1FBF33CB1D46BC9700950439 = {
 						CreatedOnToolsVersion = 8.0;
@@ -429,10 +436,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftingNotification/SwiftingNotification.entitlements;
 				DEVELOPMENT_TEAM = XZUC27U986;
 				INFOPLIST_FILE = SwiftingNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.roche.SwiftingNotification;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clutas.SwiftingNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -443,10 +451,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftingNotification/SwiftingNotification.entitlements;
 				DEVELOPMENT_TEAM = XZUC27U986;
 				INFOPLIST_FILE = SwiftingNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.roche.SwiftingNotification;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clutas.SwiftingNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -458,7 +467,7 @@
 				DEVELOPMENT_TEAM = XZUC27U986;
 				INFOPLIST_FILE = NotificationContentExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.roche.SwiftingNotification.NotificationContentExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clutas.SwiftingNotification.NotificationContentExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -471,7 +480,7 @@
 				DEVELOPMENT_TEAM = XZUC27U986;
 				INFOPLIST_FILE = NotificationContentExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.roche.SwiftingNotification.NotificationContentExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clutas.SwiftingNotification.NotificationContentExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
