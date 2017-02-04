@@ -72,7 +72,7 @@
 		1FBF33D81D46BC9700950439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FC4222E1D5E702C00917D25 /* NotificationIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationIdentifier.swift; sourceTree = "<group>"; };
 		76E0A4461E43B92C0020574C /* SwiftingNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftingNotification.entitlements; sourceTree = "<group>"; };
-		76E0A4481E43C5360020574C /* houston.Appraisals */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = houston.Appraisals; sourceTree = "<group>"; };
+		76E0A4481E43C5360020574C /* houston.Appraisals */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = houston.Appraisals; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
