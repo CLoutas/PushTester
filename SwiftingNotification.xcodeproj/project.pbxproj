@@ -24,6 +24,7 @@
 		1FBF33D71D46BC9700950439 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF33D51D46BC9700950439 /* MainInterface.storyboard */; };
 		1FBF33DB1D46BC9700950439 /* NotificationContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1FBF33CC1D46BC9700950439 /* NotificationContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1FC4222F1D5E702C00917D25 /* NotificationIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4222E1D5E702C00917D25 /* NotificationIdentifier.swift */; };
+		7638D9A91E45FFF1004A0CEB /* APNs Payload Key Reference.json in Resources */ = {isa = PBXBuildFile; fileRef = 7638D9A81E45FFF1004A0CEB /* APNs Payload Key Reference.json */; };
 		76E0A4491E43C5360020574C /* houston.Appraisals in Resources */ = {isa = PBXBuildFile; fileRef = 76E0A4481E43C5360020574C /* houston.Appraisals */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		1FBF33D61D46BC9700950439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		1FBF33D81D46BC9700950439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FC4222E1D5E702C00917D25 /* NotificationIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationIdentifier.swift; sourceTree = "<group>"; };
+		7638D9A81E45FFF1004A0CEB /* APNs Payload Key Reference.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "APNs Payload Key Reference.json"; sourceTree = "<group>"; };
 		76E0A4461E43B92C0020574C /* SwiftingNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftingNotification.entitlements; sourceTree = "<group>"; };
 		76E0A4481E43C5360020574C /* houston.Appraisals */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = houston.Appraisals; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 				76E0A44B1E43C72E0020574C /* Views */,
 				1F9EE3D31D61AE3D00AD24F7 /* Media */,
 				76E0A4461E43B92C0020574C /* SwiftingNotification.entitlements */,
+				7638D9A81E45FFF1004A0CEB /* APNs Payload Key Reference.json */,
 				1F85A6E31D44279E0006907C /* Assets.xcassets */,
 				1F85A6E81D44279E0006907C /* Info.plist */,
 			);
@@ -289,6 +292,7 @@
 				76E0A4491E43C5360020574C /* houston.Appraisals in Resources */,
 				1F9EE3D11D607C6A00AD24F7 /* matrix.gif in Resources */,
 				1F85A6E71D44279E0006907C /* LaunchScreen.storyboard in Resources */,
+				7638D9A91E45FFF1004A0CEB /* APNs Payload Key Reference.json in Resources */,
 				1F85A6E41D44279E0006907C /* Assets.xcassets in Resources */,
 				1F9EE3CD1D5FB82700AD24F7 /* skrzypce.jpg in Resources */,
 				1F85A6E21D44279E0006907C /* Main.storyboard in Resources */,

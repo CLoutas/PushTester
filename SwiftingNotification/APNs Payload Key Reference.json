@@ -1,0 +1,35 @@
+// 
+// Apple Push Notifications
+// Payload Key Reference
+//============================
+// 
+// https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/PayloadKeyReference.html#//apple_ref/doc/uid/TP40008194-CH17-SW1
+// 
+//									// TYPE 						// DESCRIPTION
+//									=========						================
+
+
+{
+	"aps": {
+
+		"alert": {					// dictionary or string
+			"title": ,				// string
+			"body": ,				// string
+			"title-loc-key": ,		// string or null				// key to localization string for the notification title
+			"title-loc-args": ,		// array of strings or null		// variable string values for format specifiers of title-loc-key
+			"action-loc-key": ,		// string or nul				// display the notif with Close and View buttons, and localize View button based on this string
+			"loc-key": ,			// string						// key to localization string for the notification alert-message
+			"loc-args": ,			// array of strings				// variable string values for format specifiers of loc-key
+			"launch-image": ,		// string						// image filename for launch image when user opens the notif
+		},
+
+	"badge": ,						// number
+	"sound": ,						// string
+	"content-available": ,			// number						// for silent notifications, include this with value = 1. The dictionary must not contain the alert, sound or badge keys
+	"category": ,					// string						// represents the notification's type and corresponds to the value in the identifier property of one of the app's registered categories
+	"thread-id": ,					// string						// app-specific identifier string for grouping notifications in Notification Center and other system interfaces
+	},
+
+	"acme1" : "bar",												// app-specific data
+    "acme2" : [ "bang",  "whiz" ]									// app-specific data
+}
