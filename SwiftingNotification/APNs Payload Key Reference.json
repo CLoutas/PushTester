@@ -23,13 +23,42 @@
 			"launch-image": ,		// string						// image filename for launch image when user opens the notif
 		},
 
-	"badge": ,						// number
-	"sound": ,						// string
-	"content-available": ,			// number						// for silent notifications, include this with value = 1. The dictionary must not contain the alert, sound or badge keys
-	"category": ,					// string						// represents the notification's type and corresponds to the value in the identifier property of one of the app's registered categories
-	"thread-id": ,					// string						// app-specific identifier string for grouping notifications in Notification Center and other system interfaces
+		"badge": ,					// number
+		"sound": ,					// string
+		"content-available": ,		// number						// for silent notifications, include this with value = 1. The dictionary must not contain the alert, sound or badge keys
+		"category": ,				// string						// represents the notification's type and corresponds to the value in the identifier property of one of the app's registered categories
+		"thread-id": ,				// string						// app-specific identifier string for grouping notifications in Notification Center and other system interfaces
 	},
 
 	"acme1" : "bar",												// app-specific data
     "acme2" : [ "bang",  "whiz" ]									// app-specific data
+}
+
+
+
+// Payload ready for Copy/Paste
+
+{
+	"aps": {
+
+		"alert": {
+			"title": ,
+			"body": ,
+			"title-loc-key": ,
+			"title-loc-args": ,
+			"action-loc-key": ,
+			"loc-key": ,
+			"loc-args": ,
+			"launch-image": ,
+		},
+
+		"badge": ,
+		"sound": ,
+		"content-available": ,
+		"category": ,
+		"thread-id": ,
+	},
+
+	"acme1" : "bar",
+	"acme2" : [ "bang",  "whiz" ]
 }
