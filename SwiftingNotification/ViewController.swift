@@ -11,7 +11,9 @@ import UserNotifications
 import UserNotificationsUI
 
 final class ViewController: UIViewController {
-    
+    override func viewDidLoad() {
+        UNUserNotificationCenter.current().delegate = self
+    }
 }
 
 // MARK: - UNUserNotificationCenterDelegate Conformance
@@ -33,7 +35,6 @@ extension ViewController {
         let content = NotificationContent(title: "SwiftingNotifications", subTitle: "Swifting.io presents", body: "Rich notifications")
         let request = UNNotificationRequest(identifier: NotificationIdentifier.request.description, content: content, trigger: nil)
         UNUserNotificationCenter.current().add(request) { error in
-            UNUserNotificationCenter.current().delegate = self
             if (error != nil){
                 //handle here
             }
@@ -45,7 +46,6 @@ extension ViewController {
         content.categoryIdentifier = NotificationIdentifier.category.description
         let request = UNNotificationRequest(identifier: NotificationIdentifier.request.description, content: content, trigger: nil)
         UNUserNotificationCenter.current().add(request) { error in
-            UNUserNotificationCenter.current().delegate = self
             if (error != nil){
                 //handle here
             }
@@ -70,7 +70,6 @@ extension ViewController {
         
         let request = UNNotificationRequest(identifier: NotificationIdentifier.request.description, content: content, trigger: nil)
         UNUserNotificationCenter.current().add(request) { error in
-            UNUserNotificationCenter.current().delegate = self
             if (error != nil){
                 //handle here
             }
@@ -85,7 +84,6 @@ extension ViewController {
         
         let request = UNNotificationRequest(identifier: NotificationIdentifier.request.description, content: content, trigger: nil)
         UNUserNotificationCenter.current().add(request) { error in
-            UNUserNotificationCenter.current().delegate = self
             if (error != nil){
                 //handle here
             }
@@ -98,7 +96,6 @@ extension ViewController {
         let content = NotificationContent(title: "SwiftingNotifications", subTitle: "Swifting.io presents", body: "Delayed notifications")
         let request = UNNotificationRequest(identifier: NotificationIdentifier.request.description, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request) { error in
-            UNUserNotificationCenter.current().delegate = self
             if (error != nil){
                 //handle here
             }
