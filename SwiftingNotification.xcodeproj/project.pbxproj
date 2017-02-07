@@ -248,7 +248,7 @@
 				TargetAttributes = {
 					1F85A6D81D44279D0006907C = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = XZUC27U986;
+						DevelopmentTeam = U96XM228SA;
 						DevelopmentTeamName = "F. Hoffmann-La Roche Ltd.";
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -259,7 +259,7 @@
 					};
 					1FBF33CB1D46BC9700950439 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = XZUC27U986;
+						DevelopmentTeam = U96XM228SA;
 						DevelopmentTeamName = "F. Hoffmann-La Roche Ltd.";
 						ProvisioningStyle = Automatic;
 					};
@@ -469,10 +469,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftingNotification/SwiftingNotification.entitlements;
-				DEVELOPMENT_TEAM = XZUC27U986;
+				DEVELOPMENT_TEAM = U96XM228SA;
 				INFOPLIST_FILE = SwiftingNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.clutas.SwiftingNotification;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mstat.SwiftingNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -484,10 +484,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftingNotification/SwiftingNotification.entitlements;
-				DEVELOPMENT_TEAM = XZUC27U986;
+				DEVELOPMENT_TEAM = U96XM228SA;
 				INFOPLIST_FILE = SwiftingNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.clutas.SwiftingNotification;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mstat.SwiftingNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -496,10 +496,10 @@
 		1FBF33DC1D46BC9700950439 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = XZUC27U986;
+				DEVELOPMENT_TEAM = U96XM228SA;
 				INFOPLIST_FILE = NotificationContentExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.clutas.SwiftingNotification.NotificationContentExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mstat.SwiftingNotification.NotificationContentExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -509,10 +509,10 @@
 		1FBF33DD1D46BC9700950439 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = XZUC27U986;
+				DEVELOPMENT_TEAM = U96XM228SA;
 				INFOPLIST_FILE = NotificationContentExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.clutas.SwiftingNotification.NotificationContentExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mstat.SwiftingNotification.NotificationContentExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;

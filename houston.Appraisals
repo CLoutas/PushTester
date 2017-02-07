@@ -11,7 +11,7 @@ require 'houston'
 # Environment variables are automatically read, or can be overridden by any specified options. You can also
 # conveniently use `Houston::Client.development` or `Houston::Client.production`.
 APN = Houston::Client.development
-APN.certificate = File.read("/Users/gurth4ng/Downloads/Certificates.pem")
+APN.certificate = File.read("/Users/kloutas/Downloads/SwiftyNotifications_Certificates.pem")
 
 # An example of the token sent back when a device registers for notifications
 token = "<fc5c5f8b8a151d30acc06a5946786580e15edb349fc44f2f0c9eb4cecb98e9f9>"
