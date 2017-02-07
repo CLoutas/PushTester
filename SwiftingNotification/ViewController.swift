@@ -17,7 +17,7 @@ final class ViewController: UIViewController {
 }
 
 // MARK: - UNUserNotificationCenterDelegate Conformance
-extension UIViewController: UNUserNotificationCenterDelegate {
+extension ViewController: UNUserNotificationCenterDelegate {
     
     public func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Swift.Void) {
         completionHandler( [.alert, .badge, .sound])
@@ -25,6 +25,7 @@ extension UIViewController: UNUserNotificationCenterDelegate {
     
     public func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void) {
         print("Tapped in notification")
+        logDeliveryOnServer()
     }
 }
 
@@ -102,4 +103,16 @@ extension ViewController {
         }
     }
 
+}
+
+// MARK: - Server logging
+extension ViewController {
+    
+    func logDeliveryOnServer() {
+        let url = URL(string: "http://10.0.0.100/~dbilios/dimitris/log_echo.php")
+        let session = URLSession(configuration: .default)
+        let task = session.dataTask(with: url!)
+        task.resume()
+    }
+    
 }
