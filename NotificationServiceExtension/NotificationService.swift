@@ -43,7 +43,9 @@ extension NotificationService {
     func logDeliveryOnServer() {
         let url = URL(string: "http://10.0.0.100/~dbilios/dimitris/log_echo.php")
         let session = URLSession(configuration: .default)
-        let task = session.dataTask(with: url!)
+        let task = session.dataTask(with: url!) { (data, response, error) in
+            guard error == nil else { print(error?.localizedDescription ?? "Delivery logging dataTask failed!"); return }
+        }
         task.resume()
     }
     
