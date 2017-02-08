@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let category = UNNotificationCategory(identifier: NotificationIdentifier.category.description, actions: [action], intentIdentifiers: [])
         center.setNotificationCategories([category])
         
+        
         // MARK: Request Authorization for Notifications
         center.requestAuthorization(options: [.badge, .alert , .sound]) { (greanted, error) in
             if error != nil { print("\(#function) error: \(error)") }
@@ -47,6 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        UIApplication.shared.applicationIconBadgeNumber = 0
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
