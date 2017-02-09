@@ -82,7 +82,7 @@
 		1FBF33D61D46BC9700950439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		1FBF33D81D46BC9700950439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FC4222E1D5E702C00917D25 /* NotificationIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationIdentifier.swift; sourceTree = "<group>"; };
-		7638D9A81E45FFF1004A0CEB /* APNs Payload Key Reference.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "APNs Payload Key Reference.json"; sourceTree = "<group>"; };
+		7638D9A81E45FFF1004A0CEB /* APNs Payload Key Reference.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "APNs Payload Key Reference.json"; path = "SwiftingNotification/APNs Payload Key Reference.json"; sourceTree = "<group>"; };
 		76E0A4461E43B92C0020574C /* SwiftingNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftingNotification.entitlements; sourceTree = "<group>"; };
 		76E0A4481E43C5360020574C /* houston.Appraisals */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = houston.Appraisals; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EC1C8F8C1E49DCA500FD01B4 /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,7 +149,6 @@
 				76E0A44B1E43C72E0020574C /* Views */,
 				1F9EE3D31D61AE3D00AD24F7 /* Media */,
 				76E0A4461E43B92C0020574C /* SwiftingNotification.entitlements */,
-				7638D9A81E45FFF1004A0CEB /* APNs Payload Key Reference.json */,
 				1F85A6E31D44279E0006907C /* Assets.xcassets */,
 				1F85A6E81D44279E0006907C /* Info.plist */,
 			);
@@ -187,6 +186,7 @@
 		76E0A4471E43C5150020574C /* Houston */ = {
 			isa = PBXGroup;
 			children = (
+				7638D9A81E45FFF1004A0CEB /* APNs Payload Key Reference.json */,
 				76E0A4481E43C5360020574C /* houston.Appraisals */,
 			);
 			name = Houston;
