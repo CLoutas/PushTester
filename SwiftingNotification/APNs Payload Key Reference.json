@@ -55,7 +55,8 @@
 
 		"badge": ,
 		"sound": ,
-		"content-available": ,
+        "content-available": ,
+        "mutable-content": ,
 		"category": ,
 		"thread-id": ,
 	},
