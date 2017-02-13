@@ -25,7 +25,8 @@
 
 		"badge": ,					// number
 		"sound": ,					// string
-		"content-available": ,		// number						// for silent notifications, include this with value = 1. The dictionary must not contain the alert, sound or badge keys
+        "content-available": ,		// number						// for silent notifications, include this with value = 1. The dictionary must not contain the alert, sound or badge keys
+        "mutable-content": ,		// number						// to use Notification Service Extensions, include this with value = 1. The dictionary must contain an alert with subkeys for the title and body of the alert
 		"category": ,				// string						// represents the notification's type and corresponds to the value in the identifier property of one of the app's registered categories
 		"thread-id": ,				// string						// app-specific identifier string for grouping notifications in Notification Center and other system interfaces
 	},
