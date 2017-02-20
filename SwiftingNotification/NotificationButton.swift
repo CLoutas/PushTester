@@ -10,9 +10,9 @@ import UIKit
 
 final class NotificationButton: UIButton {
     
-    private var pressedAction: () -> ()
+    private var pressedAction: () -> Void
     
-    init(title: String, action: @escaping () -> ()) {
+    init(title: String, action: @escaping () -> Void) {
         self.pressedAction = action
         super.init(frame: .zero)
         self.setTitleColor(UIColor.blue, for: .normal)

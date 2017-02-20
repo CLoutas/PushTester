@@ -19,7 +19,7 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         let filePath = Bundle.main.path(forResource: "matrix", ofType: "gif")
         let gif = NSData(contentsOfFile: filePath!)!
         webView.load(gif as Data, mimeType: "image/gif", textEncodingName: String(), baseURL: URL(string: filePath!)!)
-        webView.isUserInteractionEnabled = false;
+        webView.isUserInteractionEnabled = false
     }
     
     func didReceive(_ notification: UNNotification) {

@@ -9,10 +9,10 @@
 import UserNotifications
 
 class NotificationService: UNNotificationServiceExtension {
-
+    
     var contentHandler: ((UNNotificationContent) -> Void)?
     var bestAttemptContent: UNMutableNotificationContent?
-
+    
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
         self.contentHandler = contentHandler
         bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
@@ -34,7 +34,7 @@ class NotificationService: UNNotificationServiceExtension {
             contentHandler(bestAttemptContent)
         }
     }
-
+    
 }
 
 // MARK: - Server logging
@@ -43,7 +43,7 @@ extension NotificationService {
     func logPushDeliveryOnServer() {
         let url = URL(string: "http://10.0.0.100/~dbilios/dimitris/log_echo.php")
         let session = URLSession(configuration: .default)
-        let task = session.dataTask(with: url!) { (data, response, error) in
+        let task = session.dataTask(with: url!) { (_, _, error) in
             guard error == nil else { print(error?.localizedDescription ?? "Delivery logging dataTask failed!"); return }
         }
         task.resume()
