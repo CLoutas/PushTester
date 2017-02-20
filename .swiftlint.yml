@@ -1,0 +1,8 @@
+disabled_rules: # rule identifiers to exclude from running
+- trailing_whitespace
+- line_length
+
+# configurable rules can be customized from this configuration file
+# line_length:
+# - 200 # warning
+# - 250 # error
