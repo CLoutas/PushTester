@@ -11,7 +11,7 @@ import UserNotifications
 import UserNotificationsUI
 
 class NotificationViewController: UIViewController, UNNotificationContentExtension {
-
+    
     @IBOutlet weak var webView: UIWebView!
     
     override func viewDidLoad() {
