@@ -26,4 +26,12 @@ final class Helpers {
             return nil
         }
     }
+    
+    class func logPushDeliveryToServer() {
+        let url = URL(string: "http://10.0.0.100/~dbilios/dimitris/log_echo.php")
+        let session = URLSession(configuration: .default)
+        let task = session.dataTask(with: url!)
+        task.resume()
+    }
+
 }

@@ -21,7 +21,7 @@ class NotificationService: UNNotificationServiceExtension {
             // Modify the notification content here...
             bestAttemptContent.title = "\(bestAttemptContent.title) [modified]"
             
-            logDeliveryOnServer()
+            logPushDeliveryOnServer()
             
             contentHandler(bestAttemptContent)
         }
@@ -40,7 +40,7 @@ class NotificationService: UNNotificationServiceExtension {
 // MARK: - Server logging
 extension NotificationService {
     
-    func logDeliveryOnServer() {
+    func logPushDeliveryOnServer() {
         let url = URL(string: "http://10.0.0.100/~dbilios/dimitris/log_echo.php")
         let session = URLSession(configuration: .default)
         let task = session.dataTask(with: url!) { (data, response, error) in

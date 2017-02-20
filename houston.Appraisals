@@ -11,7 +11,7 @@ require 'houston'
 # Environment variables are automatically read, or can be overridden by any specified options. You can also
 # conveniently use `Houston::Client.development` or `Houston::Client.production`.
 APN = Houston::Client.development
-APN.certificate = File.read("/Users/kloutas/Downloads/apple_push_notification_SwiftingNotification.pem")
+APN.certificate = File.read("apple_push_notification_SwiftingNotification.pem")
 
 # An example of the token sent back when a device registers for notifications
 token = "<44e5cb71a62f802e6e1cddc63a83815938195c29612fb3c44552aa18db5fea5b>"
@@ -27,8 +27,8 @@ notification.alert = {
 notification.badge = 57
 notification.sound = "sosumi.aiff"
 # notification.category = "INVITE_CATEGORY"
-# notification.content_available = true
-notification.mutable_content = true
+notification.content_available = true
+#notification.mutable_content = true
 notification.custom_data = { foo: "bar" }
 
 # And... sent! That's all it takes.
