@@ -3,7 +3,7 @@
 //  SwiftingNotification
 //
 //  Created by woroninb on 15/08/16.
-//  Copyright © 2017 Constantine Lutas. All rights reserved.
+//  Copyright © 2017 Constantine Loutas. All rights reserved.
 //
 
 import UIKit
@@ -25,7 +25,7 @@ final class NotificationButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func tapped(sender: AnyObject) {
+    @objc func tapped(sender: AnyObject) {
         pressedAction()
     }
 }

@@ -2,8 +2,8 @@
 //  NotificationService.swift
 //  NotificationServiceExtension
 //
-//  Created by Konstantinos Loutas on 07/02/2017.
-//  Copyright © 2017 roche. All rights reserved.
+//  Created by Constantine Loutas on 07/02/2017.
+//  Copyright © 2017 Constantine Loutas. All rights reserved.
 //
 
 import UserNotifications
@@ -18,7 +18,7 @@ class NotificationService: UNNotificationServiceExtension {
         bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
         
         if let bestAttemptContent = bestAttemptContent {
-            // Modify the notification content here...
+            // Modify the notification content here.
             bestAttemptContent.title = "\(bestAttemptContent.title) [modified]"
             
             logPushDeliveryOnServer()

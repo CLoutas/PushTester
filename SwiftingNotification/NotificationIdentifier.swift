@@ -2,8 +2,8 @@
 //  NotificationIdentifier.swift
 //  SwiftingNotification
 //
-//  Created by Constantine Lutas on 20/01/2017.
-//  Copyright © 2017 Constantine Lutas. All rights reserved.
+//  Created by Constantine Loutas on 20/01/2017.
+//  Copyright © 2017 Constantine Loutas. All rights reserved.
 //
 
 import Foundation

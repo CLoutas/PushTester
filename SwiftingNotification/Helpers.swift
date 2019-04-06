@@ -3,7 +3,7 @@
 //  SwiftingNotification
 //
 //  Created by woroninb on 15/08/16.
-//  Copyright © 2017 Constantine Lutas. All rights reserved.
+//  Copyright © 2017 Constantine Loutas. All rights reserved.
 //
 
 import UIKit
@@ -16,7 +16,7 @@ final class Helpers {
             return nil
         }
         
-        let imageData = UIImagePNGRepresentation(image)
+        let imageData = image.pngData()
         let documentsURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0]
         do {
             let imageURL = documentsURL.appendingPathComponent("\(name).png")

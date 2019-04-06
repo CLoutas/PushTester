@@ -3,7 +3,7 @@
 //  SwiftingNotification
 //
 //  Created by woroninb on 15/08/16.
-//  Copyright © 2017 Constantine Lutas. All rights reserved.
+//  Copyright © 2017 Constantine Loutas. All rights reserved.
 //
 
 import Foundation
@@ -15,7 +15,7 @@ final class NotificationContent: UNMutableNotificationContent {
         self.title = title
         self.subtitle = subTitle
         self.body = body
-        self.sound = UNNotificationSound.default()
+        self.sound = UNNotificationSound.default
     }
     
     required init?(coder aDecoder: NSCoder) {

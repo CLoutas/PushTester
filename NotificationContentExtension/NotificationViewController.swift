@@ -3,7 +3,7 @@
 //  NotificationContentExtension
 //
 //  Created by woroninb on 25/07/16.
-//  Copyright © 2017 Constantine Lutas. All rights reserved.
+//  Copyright © 2017 Constantine Loutas. All rights reserved.
 //
 
 import UIKit
